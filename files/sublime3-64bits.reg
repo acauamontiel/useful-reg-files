@@ -1,0 +1,30 @@
+Windows Registry Editor Version 5.00
+
+; Open files
+
+[HKEY_CLASSES_ROOT\*\shell\sublime]
+@="Editar com S&ublime Text 3"
+"Icon"="C:\\Program Files\\Sublime Text 3\\sublime_text.exe,0"
+
+[HKEY_CLASSES_ROOT\*\shell\sublime\command]
+@="\"C:\\Program Files\\Sublime Text 3\\sublime_text.exe\" \"%1\""
+
+
+; This will make it appear when you right click ON a folder
+
+[HKEY_CLASSES_ROOT\Directory\shell\sublime]
+@="Abrir pasta no &Sublime Text 3"
+"Icon"="\"C:\\Program Files\\Sublime Text 3\\sublime_text.exe\",0"
+
+[HKEY_CLASSES_ROOT\Directory\shell\sublime\command]
+@="\"C:\\Program Files\\Sublime Text 3\\sublime_text.exe\" \"%1\""
+
+
+; This will make it appear when you right click INSIDE a folder
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\sublime]
+@="Abrir pasta no &Sublime Text 3"
+"Icon"="\"C:\\Program Files\\Sublime Text 3\\sublime_text.exe\",0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\sublime\command]
+@="\"C:\\Program Files\\Sublime Text 3\\sublime_text.exe\" \"%V\""
